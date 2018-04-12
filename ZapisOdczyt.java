@@ -4,10 +4,12 @@ import java.util.Random;
 public class ZapisOdczyt{
 	public static void main(String[] args){
 	 Random randChar = new Random();
-	char charTable[] = new double[1000];
-	for(i=0;i<1000;i++){
-	 	System.out.println(randChar.nextInt(63)+32);
+	char charTable[] = new char[1000];
+	for(int i=0;i<1000;i++){
+	 	charTable[i]=(char)(randChar.nextInt(63)+32);
+		System.out.print(charTable[i]);
 	}
+
 	}
 }
 
